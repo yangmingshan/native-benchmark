@@ -1,9 +1,6 @@
 import { proxySetData, setReadyStart } from './proxy';
 
-proxySetData({
-  console: true,
-  ready: true,
-});
+proxySetData();
 
 setReadyStart();
 

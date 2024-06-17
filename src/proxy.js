@@ -171,7 +171,6 @@ export function getReadyTimeWithModal(delay = 1000) {
   clearTimeout(readyTimer);
   readyTimer = setTimeout(() => {
     if (readyStart && readyEnd) {
-      console.log('Ready!!');
       wx.showModal({
         content: `Ready耗时: ${readyEnd - readyStart}`,
       });
