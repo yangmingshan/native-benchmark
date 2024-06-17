@@ -23,7 +23,7 @@ Page({
   reLaunch2() {
     setReadyStart();
     wx.reLaunch({
-      url: '/pages/static/static',
+      url: '/pages/static/index',
     });
   },
   toggleList() {
@@ -56,7 +56,7 @@ Page({
       listData: this.data.listData.concat(buildData(1000)),
     });
   },
-  delete: function _delete() {
+  deleteOne() {
     getTimeWithModal(this);
     var listData = this.data.listData;
     listData.shift();
@@ -83,7 +83,7 @@ Page({
   updateAll() {
     getTimeWithModal(this);
     var listData = this.data.listData;
-    listData.forEach(function (item) {
+    listData.forEach((item) => {
       item.amount++;
     });
     this.setData({
