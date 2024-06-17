@@ -47,7 +47,7 @@
   "compileType": "miniprogram",
   "libVersion": "development",
   "appid": "wx7f862a2cd44876dd",
-  "projectname": "vue-mini-benchmark",
+  "projectname": "native-benchmark",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {},
